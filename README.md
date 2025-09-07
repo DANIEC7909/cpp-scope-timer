@@ -13,10 +13,10 @@ A lightweight, header-only C++ timer for measuring code execution time using RAI
 ManualTimer<Timer_Aliases::ms> manualTimer ("Manual Timer");
 while(true)
 {
-manualTimer.StartTimer();
-// your code here
-manualTimer.StopTimer();
-}// automatically prints: [Manual Timer] Took: 42ms
+    manualTimer.StartTimer();
+    // your code here
+    manualTimer.StopTimer();
+} // automatically prints: [Manual Timer] Took: 42ms
 ```
 ## Passing custom function for logging
 ```cpp
