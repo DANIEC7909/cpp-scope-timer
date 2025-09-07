@@ -7,6 +7,7 @@ A lightweight, header-only C++ timer for measuring code execution time using RAI
     // your code here
 } // automatically prints: [Some Operation] Took: 42ms
 ```
+## Manual Timer
 ```cpp
 {
 ManualTimer<Timer_Aliases::ms> manualTimer ("Manual Timer");
@@ -24,6 +25,10 @@ manualTimer.StopTimer();
     {
         // your code here
     }
+    void foo()
+    {
       Timer<Timer_Aliases::ms> timer("Some Operation",CustomLog);
+        // your code here
+    } // automatically prints: [Some Operation] Took: 42ms
 }
 ```
