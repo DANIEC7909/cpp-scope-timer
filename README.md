@@ -29,6 +29,6 @@ while(true)
     {
       Timer<Timer_Aliases::ms> timer("Some Operation",CustomLog);
         // your code here
-    } // automatically prints: [Some Operation] Took: 42ms
+    } 
 }
 ```
