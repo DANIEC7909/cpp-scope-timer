@@ -17,3 +17,13 @@ manualTimer.StartTimer();
 manualTimer.StopTimer();
 }// automatically prints: [Manual Timer] Took: 42ms
 ```
+## Passing custom function to log 
+```cpp
+{
+    void CustomLog(const char* name, int64_t amount,const char* type)
+    {
+        // your code here
+    }
+      Timer<Timer_Aliases::ms> timer("Some Operation",CustomLog);
+}
+```
